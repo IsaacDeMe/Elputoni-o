@@ -141,7 +141,7 @@ html {
 /*Productos*/
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 170px));
+    grid-template-columns: repeat(auto-fit, minmax(145px, 145px));
     gap: 10px;
     width: 90%;
     margin: auto;
@@ -324,23 +324,6 @@ html {
     bottom: 200px;
     color: green;
 }
-@media screen and(max-width: 793px) {
-    /*Imagen de portada*/
-    .img-portada{
-        display: block;
-        width: 100%;
-        height: 600px;
-    }
 
-}
-@media screen and(min-width: 793px) {
-    /*Imagen de portada*/
-    .img-portada{
-        display: block;
-        width: 100%;
-        height: 600px;
-    }
-} 
-    
 
 
