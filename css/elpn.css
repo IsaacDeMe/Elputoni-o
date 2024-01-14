@@ -404,39 +404,10 @@ a:visited{
 }
     
 @media screen and (max-width: 800px) {
-    .nav{
-        background-color: blueviolet;
-        width:100px;
-        position: fixed;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 5;
-    }
-    .nav>div{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    .nav>div>ul{
-        background-color: blue;
-        width: 50%;
-        position: relative;
-        margin-left: 50%;
-        display: none;
-    
-    }
+   
+ 
     .nav>div>ul>li{
-        background-color: blueviolet;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 20px;
-        display: inline-flex;
-        font-size: 20px;
-        cursor: pointer;
+        color: red;
     }
     
   
@@ -449,58 +420,6 @@ a:visited{
     }
     
     /*Contenedor del buscador*/
-    .ctn-search{
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        height: 65px;
-        top: -12px;
-        transition: 300ms;
-        z-index: 3;
-        border-bottom: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     
-    /*Buscador*/
-    .buscador{
-      
-        padding: 8px;
-        position: fixed;
-        width: 80%;
-        left: 50%;
-        transform: translate(-50%);
-        font-size: 15px;
-        z-index: 3;
-    }
-    
-    /*Contenedor del body mientras busqueda*/
-    .ctn-container{
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        background-color: rgba(0, 0, 0, 0.566);
-        position: fixed;
-        display: none;
-    }
-    
-    /*Imagen de fondo de las ofertas*/
-    .img-portada{
-        height: 500px;
-        width: 100%;
-        margin-top:50px ;
-        border-bottom: 2px solid black;
-    }
-
-    .navegador-contenidos{
-        width: 100px;
-    }
-    .navegador-contenidos>ul{
-        background-color:#e2e2e2 ;
-    }
-    .navegador-contenidos>ul>button{
-       display: block;
-    }
-    
+   
 }
