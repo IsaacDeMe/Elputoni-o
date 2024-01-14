@@ -36,9 +36,9 @@ a:visited{
     }
     /*Barra de Encima*/
     .barra{
-        background-color: blue;
+        background-color: white;
         width: 100%;    
-        height: 80px;
+        height: 50px;
         position: fixed;
         display: block;
         z-index: 5;
@@ -51,20 +51,24 @@ a:visited{
         width: 200px;
         background-color: white;
         left: -500px;
-        z-index: 4;
+        z-index: 3;
         transition: 300ms;
     }
     .nav>div>ul{
         display: block;
-        margin-top: 85px;
+        margin-top: 55px;
     }
     .nav>div>ul>li{
         position: relative;
         padding: 10px 20px;
-        background-color: red;
+        background-color: white;
         margin-top: 5px;
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
+        cursor: pointer;
+    }
+    .nav>div>ul>li:hover{
+        background-color: #888;
     }
      
   
@@ -72,18 +76,18 @@ a:visited{
     #icono-barras{
         position: fixed;
         display: block;
-        font-size: 40px;
-        left: 4%;
-        top: 20px;
-        background-color: red;
+        font-size: 30px;
+        left: 7%;
+        top: 10px;
+        background-color: white;
     }
     /*Icono de busqueda*/
     #icon-search{
         position: fixed;
         display: block;
         left: 80%;
-        font-size: 40px;
-        margin-top: 20px;
+        font-size: 30px;
+        margin-top: 10px;
     }
     
     /*Contenedor del buscador*/
@@ -92,9 +96,10 @@ a:visited{
         display: flex;
         position: fixed;
         width: 100%;
-        height: 80px;
-        transition: 300ms;
+        height: 50px;
+        transition: 600ms;
         z-index: 3;
+        top: 2px;
         border-bottom: 2px solid black;
         justify-content: center;
         align-items: center;
@@ -102,13 +107,13 @@ a:visited{
 
     /*Buscador*/
     .buscador{
-        padding: 15px;
+        padding: 8px;
         position: fixed;
         width: 80%;
         left: 50%;
         transform: translate(-50%);
-        font-size: 25px;
-        z-index: 3;
+        font-size: 15px;
+        z-index: 4;
     }
     /*Imagen de portada*/
     .img-portada{
@@ -119,8 +124,10 @@ a:visited{
 
     /*Nav de categorias*/
     .navegador-contenidos{
-        background-color: blueviolet;
+        margin-top: 5px;
+        background-color: white;
         height: 50px;
+        border: none;
     }
     .navegador-contenidos>ul{
         display: block;
@@ -135,146 +142,169 @@ a:visited{
     }
     
 
-/*Productos*/
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    gap: 10px;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-}
+    /*Productos*/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
 
-.card {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
+    .card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
 
-.card:hover {
-    transform: scale(1.05);
-}
+    .card:hover {
+        transform: scale(1.05);
+    }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 8;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+    .modal {
+        display: none   ;
+        position: fixed;
+        z-index: 8;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 
-.modal-content {
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 95%;
-    height: 90%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    position: fixed;
-}
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        height: 4000px;
+        position: relative;
+    }
 
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 
-.nombre-producto{
-    display: block;
-    position: relative;
-    text-align: left;
-    padding: 5px 10px;
-    top: 145px;
-    font-weight: lighter;
-    font-size: 22px;
+    .nombre-producto{
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 5px 10px;
+        top: 145px;
+        font-weight: lighter;
+        font-size: 22px;
+        
+    }
+    .img-producto{
+        height: 145px;
+        width: 145;
+        bottom: 45px;
+        display: block;
+        position: relative;
+        margin: auto;
+    }
+    .precio{
+        display: block;
+        position: relative;
+        color: red;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .valoracion{
+        display: block;
+        position: relative;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 10px;
+
+    }
+    .envio-gratis{
+        color: green;
+        display: block;
+        position: relative;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    /*Cosas del modal*/
+    .img-modal{
+        position: relative;
+        margin-top: 40px;
+        height: 400px;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .titulo-modal{
+        position: relative;
+        display: block;
+        top: 0px;
+        left: 5%;
+    }
+
+    .descripcion-modal{
+        display: block;
+        position: relative;
+        left: 5%;
+    }
+
+    .footer-producto{
+        position: fixed;
+        display: none;
+        bottom: 0px;
+        height: 70px;
+        left: 0px;
+        width: 100%;
+        background-color: white;
+        z-index: 8;
+    }
+    .boton-comprar{
+        display: flex;
+        position: relative;
+        padding: 5px 50px;
+        border: none;
+        border: 1px solid gray;
+        border-radius: 5%;
+        background-color: black;
+        color: white;
+        top: 15px;
+        left: 5%;
+    }
+    .boton-comprar>a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;    
+    }
+    .boton-ver-mas{
+        border: none;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .datos-envio{
+        display: block;
+        position: relative;
+        left: 55%;
+        bottom: 200px;
+        color: green;
+    }
     
-}
-.img-producto{
-    height: 145px;
-    width: 155px;
-    bottom: 45px;
-    display: block;
-    position: relative;
-    margin: auto;
-}
-.precio{
-    display: block;
-    position: relative;
-    color: red;
-    text-align: left;
-    margin-left: 10px;
-    font-size: 20px;
-    margin-top: 5px;
-}
-.valoracion{
-    display: block;
-    position: relative;
-    text-align: left;
-    margin-left: 10px;
-    font-size: 10px;
-
-}
-.envio-gratis{
-    color: green;
-    display: block;
-    position: relative;
-    text-align: left;
-    margin-left: 10px;
-}
-
-/*Cosas del modal*/
-.titulo-modal{
-    position: relative;
-    display: block;
-    top: 40px;
-    left: 55%;
-}
-
-.descripcion-modal{
-    display: block;
-    position: relative;
-    left: 55%;
-    top: 40px;
-}
-.boton-comprar{
-    display: block;
-    position: relative;
-    left: 55%;
-    padding: 10px 50px;
-    top :250px;
-    background-color: green;
-}
-.boton-comprar>a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;    
-}
-.datos-envio{
-    display: block;
-    position: relative;
-    left: 55%;
-    bottom: 200px;
-    color: green;
-}
-   
 }

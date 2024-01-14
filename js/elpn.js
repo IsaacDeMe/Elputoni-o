@@ -39,7 +39,7 @@ function mostrar_buscador(){
     document.getElementById("input-search").focus();
     document.getElementById("ctn-container").style.display="block";
     if (window.matchMedia("(max-width: 780px)").matches) {
-        document.getElementById("ctn-search").style.top = "80px";
+        document.getElementById("ctn-search").style.top = "50px";
 
     }
 }
@@ -49,6 +49,10 @@ function ocultar_buscador(){
     document.getElementById("ctn-search").style.top = "-12px";
     document.getElementById("ctn-container").style.display="none";
     contador = 0;
+    if (window.matchMedia("(max-width: 780px)").matches) {
+        document.getElementById("ctn-search").style.top = "2px";
+
+    }
 }
 
 //Funcion de buscar
@@ -101,11 +105,12 @@ function filtrar(categoria) {
 //Funcion de mostrar etiqueta de los productos
 function openModal(id) {
     document.getElementById(id).style.display = "block";
-
+    document.getElementById("footer-producto").style.display = "block";
 }
 
 function closeModal(id) {
     document.getElementById(id).style.display = "none";
+    document.getElementById("footer-producto").style.display = "none";
 }
 
 //Funcion de barras
@@ -120,8 +125,8 @@ function ocultar_nav(){
     document.getElementById("ctn-container").style.display="none";
 
 }
-
+//FUncion para elejir opcion 
 function callFunction(select) {
     var selectedOption = select.options[select.selectedIndex].value;
     eval(selectedOption);
-   }
+}
