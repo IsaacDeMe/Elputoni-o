@@ -120,3 +120,8 @@ function ocultar_nav(){
     document.getElementById("ctn-container").style.display="none";
 
 }
+
+function callFunction(select) {
+    var selectedOption = select.options[select.selectedIndex].value;
+    eval(selectedOption);
+   }

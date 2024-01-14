@@ -48,7 +48,14 @@
     <div class="body-content">
         <nav class="navegador-contenidos">
             <ul>
-                <button onclick="filtrar('todo')"       class="btn" data-categoria="todo"       >Todo</button><button onclick="filtrar('camisetas')"       class="btn" data-categoria="camisetas"          >Camisetas</button><button onclick="filtrar('sudaderas')"       class="btn" data-categoria="sudaderas"       >Sudaderas</button><button onclick="filtrar('pantalones')"      class="btn" data-categoria="pantalones"       >Pantalones</button><button onclick="filtrar('calcetines')"      class="btn" data-categoria="calcetines"        >Calcetines</button><button onclick="filtrar('accesorios')"      class="btn" data-categoria="accesorios"        >Accesorios</button>
+                <select id="mySelect" onchange="callFunction(this)">
+                    <option value="filtrar('todo')"         data-categoria="todo">          Todo</option>
+                    <option value="filtrar('camisetas')"    data-categoria="camisetas">     Camisetas</option>
+                    <option value="filtrar('sudaderas')"    data-categoria="sudaderas">     Sudaderas</option>
+                    <option value="filtrar('pantalones')"   data-categoria="pantalones">    Pantalones</option>
+                    <option value="filtrar('calcetines')"   data-categoria="calcetines">    Calcetines</option>
+                    <option value="filtrar('accesorios')"   data-categoria="accesorios">    Accesorios</option>
+                </select>             
             </ul>
         </nav>
 
