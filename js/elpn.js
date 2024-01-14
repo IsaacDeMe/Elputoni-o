@@ -27,7 +27,7 @@ document.addEventListener("keyup", function(event){
 
 function ctn_container(){
     ocultar_buscador();
-    if (window.matchMedia("(max-width: 480px)").matches) {
+    if (window.matchMedia("(max-width: 780px)").matches) {
         ocultar_nav();
     }
 }
@@ -106,7 +106,7 @@ function closeModal(id) {
 
 //Funcion de barras
 function mostrar_nav(){
-    document.getElementById("nav").style.left = "0px";
+    document.getElementById("nav").style.left = "0";
     document.getElementById("ctn-container").style.display="block";
 
 }
