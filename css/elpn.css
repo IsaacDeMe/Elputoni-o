@@ -1,0 +1,410 @@
+/*General*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#contenedor{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 200px;
+}
+body{
+    width:100%;
+    height: 100%;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+/*Body content*/
+.body-content{
+    width:100%;
+}
+
+/*Nav*/
+.nav{
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+.nav>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.nav>div>ul{
+    background-color: blue;
+    width: 50%;
+    position: relative;
+    margin-left: 50%;
+
+}
+.nav>div>ul>li{
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    display: inline-flex;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Icono de busqueda*/
+#icon-search{
+    display: block;
+    position: fixed;
+    top :3px;
+    font-size: 25px ;
+    padding: 10px 10px; 
+    margin-left: 50px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/*Icono de barras*/
+#icono-barras{
+    width: 40px;
+    margin-left: 100px;
+    height: 40px;
+    top: 3px;
+    position: absolute;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 100%;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 0 10px;
+    display: none;
+        
+}
+
+/*Contenedor del buscador*/
+.ctn-search{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: -12px;
+    transition: 300ms;
+    z-index: 3;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Buscador*/
+.buscador{
+  
+    padding: 8px;
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 15px;
+    z-index: 3;
+}
+
+/*Contenedor del body mientras busqueda*/
+.ctn-container{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.566);
+    position: fixed;
+    display: none;
+}
+
+/*Imagen de fondo de las ofertas*/
+.img-portada{
+    height: 500px;
+    width: 100%;
+    margin-top:50px ;
+    border-bottom: 2px solid black;
+}
+
+
+/*Navegador de los contenidos de ropa*/
+.navegador-contenidos{
+    width: 100%;
+}
+.navegador-contenidos>ul{
+    background-color:#e2e2e2 ;
+}
+.navegador-contenidos>ul>button{
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    border-right: 1px solid black ;
+    border-top: 1px solid black ;
+    border-left: 1px solid black;
+    margin-right: 0px;
+    width: 16%;
+    padding: 10px;
+}
+
+/*Boton de todo*/
+
+.catalogo{
+    display: block;
+}
+.btn-selected{
+    background-color: white;
+}
+
+
+
+/*Productos*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+    height: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    position: fixed;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.nombre-producto{
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 5px 10px;
+    top: 145px;
+    font-weight: lighter;
+    font-size: 22px;
+    
+}
+.img-producto{
+    height: 145px;
+    width: 155px;
+    bottom: 45px;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+.precio{
+    display: block;
+    position: relative;
+    color: red;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.valoracion{
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 10px;
+
+}
+.envio-gratis{
+    color: green;
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/*Cosas del modal*/
+.titulo-modal{
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 55%;
+}
+
+.descripcion-modal{
+    display: block;
+    position: relative;
+    left: 55%;
+    top: 40px;
+}
+.boton-comprar{
+    display: block;
+    position: relative;
+    left: 55%;
+    padding: 10px 50px;
+    top :250px;
+    background-color: green;
+}
+.boton-comprar>a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;    
+}
+.datos-envio{
+    display: block;
+    position: relative;
+    left: 55%;
+    bottom: 200px;
+    color: green;
+}
+/*Clases de los botones de pasar*/
+.prev{
+    display: block;
+    position: absolute;
+    height: 400px;
+    bottom: 70px;
+    left: 5%;
+    width: 20px;
+    border: none;
+    background-color: white;
+}
+
+.next{
+    display: block;
+    position: absolute;
+    height: 400px;
+    bottom: 70px;
+    left: 48%;
+    width: 20px;
+    border: none;
+    background-color: white;
+}
+
+/*Clases de las imagenes*/
+.img-modal1{
+    position: fixed;
+    display: block;
+    height: 400px;
+    width: 480px;
+    left: 8.5%;
+    bottom:  105px;
+    z-index: 8;
+}
+.img-modal2{
+    position: fixed;
+    display: block;
+    height: 400px;
+    width: 480px;
+    left: 8.5%;
+    bottom:  105px;
+    z-index: 5;
+}
+
+.img-modal3{
+    position: fixed;
+    display: block;
+    height: 400px;
+    width: 480px;
+    left: 8.5%;
+    bottom:  105px;
+    z-index: 6;
+}
+
+/* Estilos para dispositivos móviles de hasta 600px de anchura */
+@media (max-width: 1220px) {
+    .nav{
+        align-items: center;
+        display: flex;
+    }
+    .nav>div{
+        max-width: 1000px;
+        
+    }
+    .body-content {
+        max-width: 1000px;
+
+    }
+    .container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .navegador-contenidos{
+        width: 1200px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navegador-contenidos> ul{
+        width: 800px;
+        background-color: blue;
+    }
+    .navegador-contenidos> ul>button{
+        display: inline-block;
+        font-size: 20px;
+        border: none;
+        border-right: 1px solid black ;
+        border-top: 1px solid black ;
+        border-left: 1px solid black;
+        margin-right: 0px;
+        padding: 10px;
+        width: 16.4%;
+    }
+}
+    
+/* Estilos para dispositivos móviles de entre 600px y 1024px de anchura */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+}    
+    

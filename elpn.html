@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Puto Niño</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="css/elpn.css" type="text/css"/>
+     <!--FONT AWESOME-->
+     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+     <!--Java Script-->
+     <script src="js/elpn.js"></script>
+     <!--JQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<Header>
+    <div class= "header-container">
+        <nav class="nav">
+            <div>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Catalogo</li>
+                    <li>Info</li>
+                    <li>Contacto</li>
+                    <li><i class="fas fa-1x fa-search" id="icon-search" onclick="click_icono()"></i></li>
+                    <li><i class="fa-solid fa-bars" id="icono-barras" onclick="mostrar_nav()"></i></li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+        <div class="ctn-search" id="ctn-search">  
+            <input class="buscador" id="input-search" onkeyup="searchByName()" type="text" placeholder="¿Qué desea buscar?">
+        </div>
+        
+    </div>
+                
+        
+</Header>
+
+<body>
+    <div class="ctn-container" id="ctn-container" onclick="ctn_container()"></div>
+    <img src="img/sevilla.jpg" class="img-portada">
+
+    <div class="body-content">
+        <nav class="navegador-contenidos">
+            <ul>
+                <button onclick="filtrar('todo')"       class="btn" data-categoria="todo"       >Todo</button><button onclick="filtrar('camisetas')"       class="btn" data-categoria="camisetas"          >Camisetas</button><button onclick="filtrar('sudaderas')"       class="btn" data-categoria="sudaderas"       >Sudaderas</button><button onclick="filtrar('pantalones')"      class="btn" data-categoria="pantalones"       >Pantalones</button><button onclick="filtrar('calcetines')"      class="btn" data-categoria="calcetines"        >Calcetines</button><button onclick="filtrar('accesorios')"      class="btn" data-categoria="accesorios"        >Accesorios</button>
+            </ul>
+        </nav>
+
+
+       
+    
+    
+        
+        <section class="catalogo">
+            <div class="container">
+                <div class="card" onclick="openModal('product1')" alt="camisetas" >
+                    <h2 class="nombre-producto">Camisetas</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 1" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                <div class="card" onclick="openModal('product2')" alt="sudaderas" >
+                    <h2 class="nombre-producto">Sudaderas</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 2" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                
+                <div class="card" onclick="openModal('product3')" alt="pantalones" >
+                    <h2 class="nombre-producto">Pantalones</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 3" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                
+                <div class="card" onclick="openModal('product4')" alt="calcetines" >
+                    <h2 class="nombre-producto">Calcetines</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 4" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                <div class="card" onclick="openModal('product5')" alt="accesorios" >
+                    <h2 class="nombre-producto">Accesorios</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 5" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                <div class="card" onclick="openModal('product6')" alt="camisetas" >
+                    <h2 class="nombre-producto">Camisetas</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 1" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                <div class="card" onclick="openModal('product7')" alt="sudaderas" >
+                    <h2 class="nombre-producto">Sudaderas</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 2" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                
+                <div class="card" onclick="openModal('product8')" alt="pantalones" >
+                    <h2 class="nombre-producto">Pantalones</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 3" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                
+                <div class="card" onclick="openModal('product9')" alt="calcetines" >
+                    <h2 class="nombre-producto">Calcetines</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 4" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+                <div class="card" onclick="openModal('product10')" alt="accesorios" >
+                    <h2 class="nombre-producto">Accesorios</h2>
+                    <img src="img/sevilla.jpg" alt="Producto 5" class="img-producto" style="width: 100%;">
+                    <span class="valoracion">⭐⭐⭐⭐</span>
+                    <span class="precio">54$</span>
+                    <span class="envio-gratis">Envio Gratis</span>
+                </div>
+    
+    
+            </div>
+            <!--MODAL DE LOS PRODUCTOS-->
+            <div  class="modal" id="product1">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product1')">&times;</span>
+                    <h2 class="titulo-modal">Camisetas</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+           
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                    <div class="slideshow">
+                        <div class="slide">
+                          <img src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Product 1">
+                        </div>
+                        <div class="slide">
+                          <img src="img/sevilla.jpg" alt="Product 2">
+                        </div>
+                        <!-- Add more slides as needed -->
+                        <button class="prev">Previous</button>
+                        <button class="next">Next</button>
+                      </div>
+                </div>
+            </div>
+            <div class="modal" id="product2">
+                <div class="modal-content" >
+                    <span class="close" onclick="closeModal('product2')">&times;</span>
+                    <h2 class="titulo-modal">Sudaderas</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product3">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product3')">&times;</span>
+                    <h2 class="titulo-modal">Pantalones</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div id="image1" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product4">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product4')">&times;</span>
+                    <h2 class="titulo-modal">Calcetines</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails">
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product5">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product5')">&times;</span>
+                    <h2 class="titulo-modal">Accesorios</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+    
+    
+    
+            <div  class="modal" id="product6">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product1')">&times;</span>
+                    <h2 class="titulo-modal">Camisetas</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product7">
+                <div class="modal-content" >
+                    <span class="close" onclick="closeModal('product2')">&times;</span>
+                    <h2 class="titulo-modal">Sudaderas</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product8">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product3')">&times;</span>
+                    <h2 class="titulo-modal">Pantalones</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product9">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product4')">&times;</span>
+                    <h2 class="titulo-modal">Calcetines</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails">
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+            <div class="modal" id="product10">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('product5')">&times;</span>
+                    <h2 class="titulo-modal">Accesorios</h2>
+                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <div class="image-thumbnails" >
+                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
+                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
+                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+                    </div>
+                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
+                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+    
+                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <span class="datos-envio">Envío gratuito</span>
+                </div>
+            </div>
+        
+            
+    
+    
+    
+    
+        </section>
+
+    </div>
+    
+
+   
+</body>
+</html>
