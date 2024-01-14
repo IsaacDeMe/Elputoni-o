@@ -115,6 +115,7 @@ html {
 .img-portada{
     display: block;
     width: 100%;
+    height: 450px;
 }
 
 /*Nav de categorias*/
@@ -140,7 +141,7 @@ html {
 /*Productos*/
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(196px, 180px));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 170px));
     gap: 10px;
     width: 90%;
     margin: auto;
@@ -328,7 +329,7 @@ html {
     .img-portada{
         display: block;
         width: 100%;
-        height: 400px;
+        height: 600px;
     }
 
 }
