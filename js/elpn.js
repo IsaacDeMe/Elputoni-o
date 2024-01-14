@@ -27,9 +27,7 @@ document.addEventListener("keyup", function(event){
 
 function ctn_container(){
     ocultar_buscador();
-    if (window.matchMedia("(max-width: 780px)").matches) {
-        ocultar_nav();
-    }
+    ocultar_nav();
 }
 
 //Funcion de mostrar buscador 
@@ -111,6 +109,7 @@ function openModal(id) {
 function closeModal(id) {
     document.getElementById(id).style.display = "none";
     document.getElementById("footer-producto").style.display = "none";
+    document.querySelectorAll(".img-modal-2").classList("hidden");
 }
 
 //Funcion de barras
@@ -130,3 +129,10 @@ function callFunction(select) {
     var selectedOption = select.options[select.selectedIndex].value;
     eval(selectedOption);
 }
+
+//Funcion ver mas imagenes
+function mostrar_img() {
+    const images = document.querySelectorAll('.img-modal-s');
+    images.classList.add("show-image");
+   
+  }

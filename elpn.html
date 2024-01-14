@@ -108,47 +108,6 @@
                     <span class="envio-gratis">Envio Gratis</span>
                 </div>
     
-                <div class="card" onclick="openModal('product6')" alt="camisetas" >
-                    <h2 class="nombre-producto">Camisetas</h2>
-                    <img src="img/sevilla.jpg" alt="Producto 1" class="img-producto" style="width: 100%;">
-                    <span class="valoracion">⭐⭐⭐⭐</span>
-                    <span class="precio">54$</span>
-                    <span class="envio-gratis">Envio Gratis</span>
-                </div>
-    
-                <div class="card" onclick="openModal('product7')" alt="sudaderas" >
-                    <h2 class="nombre-producto">Sudaderas</h2>
-                    <img src="img/sevilla.jpg" alt="Producto 2" class="img-producto" style="width: 100%;">
-                    <span class="valoracion">⭐⭐⭐⭐</span>
-                    <span class="precio">54$</span>
-                    <span class="envio-gratis">Envio Gratis</span>
-                </div>
-    
-                
-                <div class="card" onclick="openModal('product8')" alt="pantalones" >
-                    <h2 class="nombre-producto">Pantalones</h2>
-                    <img src="img/sevilla.jpg" alt="Producto 3" class="img-producto" style="width: 100%;">
-                    <span class="valoracion">⭐⭐⭐⭐</span>
-                    <span class="precio">54$</span>
-                    <span class="envio-gratis">Envio Gratis</span>
-                </div>
-    
-                
-                <div class="card" onclick="openModal('product9')" alt="calcetines" >
-                    <h2 class="nombre-producto">Calcetines</h2>
-                    <img src="img/sevilla.jpg" alt="Producto 4" class="img-producto" style="width: 100%;">
-                    <span class="valoracion">⭐⭐⭐⭐</span>
-                    <span class="precio">54$</span>
-                    <span class="envio-gratis">Envio Gratis</span>
-                </div>
-    
-                <div class="card" onclick="openModal('product10')" alt="accesorios" >
-                    <h2 class="nombre-producto">Accesorios</h2>
-                    <img src="img/sevilla.jpg" alt="Producto 5" class="img-producto" style="width: 100%;">
-                    <span class="valoracion">⭐⭐⭐⭐</span>
-                    <span class="precio">54$</span>
-                    <span class="envio-gratis">Envio Gratis</span>
-                </div>
     
     
             </div>
@@ -160,174 +119,129 @@
                     <div class="slideshow">
                         <div class="slide">
                           <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
-                          <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
-                          <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
 
                         </div>
                         <!-- Add more slides as needed -->
-                        <button class="boton-ver-mas">Ver mas imagenes</button>
+                        <button class="boton-ver-mas" onclick="mostrar_img()">Ver mas imagenes</button>
                     </div>
                     <h2 class="titulo-modal">Camisetas</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
+                    <p class="descripcion-modal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit tempore, sint cumque error, eum quidem sed iusto animi amet accusantium exercitationem nemo consequuntur molestias pariatur saepe delectus accusamus? Quas cumque reiciendis voluptates, unde praesentium provident vero dolores quasi eligendi explicabo maxime cupiditate rerum dicta soluta autem dolor. Quam, ducimus in?</p>
            
                     <footer class="footer-producto" id="footer-producto">
-                        <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-
+                        <button class="boton-comprar"><a href="https://buy.stripe.com/test_3cs16bd45cVt7gA4gj">Comprar</a></button>
+                        <span class="close-abajo" onclick="closeModal('product1')">&times;</span>
                     </footer>
                     
                     <span class="datos-envio">Envío gratuito</span>
-                 
                 </div>
             </div>
-            <div class="modal" id="product2">
-                <div class="modal-content" >
+
+            <div  class="modal" id="product2">
+                <div class="modal-content">
                     <span class="close" onclick="closeModal('product2')">&times;</span>
+
+                    <div class="slideshow">
+                        <div class="slide">
+                          <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+
+                        </div>
+                        <!-- Add more slides as needed -->
+                        <button class="boton-ver-mas" onclick="mostrar_img()">Ver mas imagenes</button>
+                    </div>
                     <h2 class="titulo-modal">Sudaderas</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <p class="descripcion-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum, aliquam tempora, quod ut accusantium aliquid sint deserunt magni minima iusto animi, eaque suscipit est facere iure consequuntur quaerat molestiae? Necessitatibus amet distinctio laborum ipsum incidunt repellendus laudantium tenetur aliquid velit, aliquam dolores, vel ea temporibus sint mollitia! Magni, quasi.</p>
+           
+                    <footer class="footer-producto" id="footer-producto">
+                        <button class="boton-comprar"><a href="https://buy.stripe.com/test_3cs16bd45cVt7gA4gj">Comprar</a></button>
+                        <span class="close-abajo" onclick="closeModal('product1')">&times;</span>
+                    </footer>
+                    
                     <span class="datos-envio">Envío gratuito</span>
                 </div>
             </div>
-            <div class="modal" id="product3">
+
+            <div  class="modal" id="product3">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('product3')">&times;</span>
-                    <h2 class="titulo-modal">Pantalones</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div id="image1" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
+
+                    <div class="slideshow">
+                        <div class="slide">
+                          <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+
+                        </div>
+                        <!-- Add more slides as needed -->
+                        <button class="boton-ver-mas" onclick="mostrar_img()">Ver mas imagenes</button>
                     </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <h2 class="titulo-modal">Pantalones</h2>
+                    <p class="descripcion-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum, aliquam tempora, quod ut accusantium aliquid sint deserunt magni minima iusto animi, eaque suscipit est facere iure consequuntur quaerat molestiae? Necessitatibus amet distinctio laborum ipsum incidunt repellendus laudantium tenetur aliquid velit, aliquam dolores, vel ea temporibus sint mollitia! Magni, quasi.</p>
+           
+                    <footer class="footer-producto" id="footer-producto">
+                        <button class="boton-comprar"><a href="https://buy.stripe.com/test_3cs16bd45cVt7gA4gj">Comprar</a></button>
+                        <span class="close-abajo" onclick="closeModal('product1')">&times;</span>
+                    </footer>
+                    
                     <span class="datos-envio">Envío gratuito</span>
                 </div>
             </div>
-            <div class="modal" id="product4">
+
+            <div  class="modal" id="product4">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('product4')">&times;</span>
+
+                    <div class="slideshow">
+                        <div class="slide">
+                          <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+                          <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+
+                        </div>
+                        <!-- Add more slides as needed -->
+                        <button class="boton-ver-mas" onclick="mostrar_img()">Ver mas imagenes</button>
+                    </div>
                     <h2 class="titulo-modal">Calcetines</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails">
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
+                    <p class="descripcion-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum, aliquam tempora, quod ut accusantium aliquid sint deserunt magni minima iusto animi, eaque suscipit est facere iure consequuntur quaerat molestiae? Necessitatibus amet distinctio laborum ipsum incidunt repellendus laudantium tenetur aliquid velit, aliquam dolores, vel ea temporibus sint mollitia! Magni, quasi.</p>
+           
+                    <footer class="footer-producto" id="footer-producto">
+                        <button class="boton-comprar"><a href="https://buy.stripe.com/test_3cs16bd45cVt7gA4gj">Comprar</a></button>
+                        <span class="close-abajo" onclick="closeModal('product1')">&times;</span>
+                    </footer>
+                    
                     <span class="datos-envio">Envío gratuito</span>
                 </div>
-            </div>
-            <div class="modal" id="product5">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('product5')">&times;</span>
-                    <h2 class="titulo-modal">Accesorios</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
+
+                <div  class="modal" id="product5">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('product5')">&times;</span>
     
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
+                        <div class="slideshow">
+                            <div class="slide">
+                              <img class="img-modal" src="img/sevilla.jpg" alt="Product 2">
+                              <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+                              <img class="img-modal-s" src="img/sevilla.jpg" alt="Product 2">
+    
+                            </div>
+                            <!-- Add more slides as needed -->
+                            <button class="boton-ver-mas" onclick="mostrar_img()">Ver mas imagenes</button>
+                        </div>
+                        <h2 class="titulo-modal">accesorios</h2>
+                        <p class="descripcion-modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum, aliquam tempora, quod ut accusantium aliquid sint deserunt magni minima iusto animi, eaque suscipit est facere iure consequuntur quaerat molestiae? Necessitatibus amet distinctio laborum ipsum incidunt repellendus laudantium tenetur aliquid velit, aliquam dolores, vel ea temporibus sint mollitia! Magni, quasi.</p>
+               
+                        <footer class="footer-producto" id="footer-producto">
+                            <button class="boton-comprar"><a href="https://buy.stripe.com/test_3cs16bd45cVt7gA4gj">Comprar</a></button>
+                            <span class="close-abajo" onclick="closeModal('product1')">&times;</span>
+                        </footer>
+                        
+                        <span class="datos-envio">Envío gratuito</span>
+                    </div>
                 </div>
             </div>
-    
-    
-    
-            <div  class="modal" id="product6">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('product1')">&times;</span>
-                    <h2 class="titulo-modal">Camisetas</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
-                </div>
-            </div>
-            <div class="modal" id="product7">
-                <div class="modal-content" >
-                    <span class="close" onclick="closeModal('product2')">&times;</span>
-                    <h2 class="titulo-modal">Sudaderas</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
-                </div>
-            </div>
-            <div class="modal" id="product8">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('product3')">&times;</span>
-                    <h2 class="titulo-modal">Pantalones</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
-                </div>
-            </div>
-            <div class="modal" id="product9">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('product4')">&times;</span>
-                    <h2 class="titulo-modal">Calcetines</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails">
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
-                </div>
-            </div>
-            <div class="modal" id="product10">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('product5')">&times;</span>
-                    <h2 class="titulo-modal">Accesorios</h2>
-                    <p class="descripcion-modal">Descripción del producto 1.</p>
-                    <div class="image-thumbnails" >
-                        <img class="img-modal1" id="img-modal-1" src="img/sevilla.jpg" alt="Thumbnail 1">
-                        <img class="img-modal2" id="img-modal-2" src="img/tienda-dibujos-animados-compras_18591-42797.avif" alt="Thumbnail 2">
-                        <img class="img-modal3" id="img-modal-3" src="img/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.webp" alt="Thumbnail 3">
-                    </div>
-                    <button class="prev-btn" onclick="click_icono_anterior()">&#10094;</button>
-                    <button class="next-btn" onclick="click_icono_next()" >&#10095;</button>
-    
-                    <button class="boton-comprar"><a href="https://buy.stripe.com/test_00geX1e898FdbwQcMN">Comprar</a></button>
-                    <span class="datos-envio">Envío gratuito</span>
-                </div>
-            </div>
-        
+            
             
     
     
