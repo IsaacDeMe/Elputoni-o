@@ -28,47 +28,7 @@ a:visited{
 }
 
 
-/* Estilos para dispositivos móviles de hasta 600px de anchura */
-@media (min-width: 1120px) {
-    .nav{
-        align-items: center;
-        display: flex;
-    }
-    .nav>div{
-        max-width: 1000px;
-        
-    }
-    .body-content {
-        max-width: 1000px;
 
-    }
-    .container{
-        max-width: 1000px;
-        margin: auto;
-    }
-    .navegador-contenidos{
-        width: 1200px;
-        background-color: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navegador-contenidos> ul{
-        width: 800px;
-        background-color: blue;
-    }
-    .navegador-contenidos> ul>button{
-        display: inline-block;
-        font-size: 20px;
-        border: none;
-        border-right: 1px solid black ;
-        border-top: 1px solid black ;
-        border-left: 1px solid black;
-        margin-right: 0px;
-        padding: 10px;
-        width: 16.4%;
-    }
-}
     
 @media screen and (max-width: 800px) {
     html {
