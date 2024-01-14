@@ -38,6 +38,10 @@ function mostrar_buscador(){
     document.getElementById("ctn-search").style.top = "50px";
     document.getElementById("input-search").focus();
     document.getElementById("ctn-container").style.display="block";
+    if (window.matchMedia("(max-width: 780px)").matches) {
+        document.getElementById("ctn-search").style.top = "80px";
+
+    }
 }
 
 //Funcion de ocultar el buscador
